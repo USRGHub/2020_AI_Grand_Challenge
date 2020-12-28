@@ -1,0 +1,31 @@
+material KI_tree/Branch
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+	  ambient 0.5 0.5 0.5 1.0
+      specular 0.2 0.2 0.2 1.0 12.5
+
+      texture_unit
+      {
+        texture branch_1_diffuse.png
+      }
+    }
+  }
+}
+
+material KI_tree/Bark
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture bark_diffuse.png
+      }
+    }
+  }
+}

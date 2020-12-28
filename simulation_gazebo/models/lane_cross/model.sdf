@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="lane_cross">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>15 30 .3</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>15 30 .3</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://lane_cross/materials/scripts</uri>
+            <uri>model://lane_cross/materials/textures</uri>
+            <name>vrc/lane_cross</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

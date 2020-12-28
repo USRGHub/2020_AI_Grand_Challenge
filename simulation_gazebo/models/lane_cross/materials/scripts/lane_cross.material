@@ -1,0 +1,21 @@
+material vrc/lane_cross
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5 1.0
+			diffuse 0.5 0.5 0.5 1.0
+			specular 0.2 0.2 0.2 1.0 12.5
+
+			texture_unit
+			{
+				texture lane_cross.png
+				filtering anistropic
+				max_anisotropy 1
+				scale 1.0 1.0
+			}
+		}
+	}
+}

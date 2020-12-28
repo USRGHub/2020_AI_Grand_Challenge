@@ -1,0 +1,7 @@
+<launch>
+  <arg name="world_name" default="$(find simulation_drone)/worlds/ki_arena.world"/>
+
+  <include file="$(find simulation_drone)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+  </include>
+</launch>

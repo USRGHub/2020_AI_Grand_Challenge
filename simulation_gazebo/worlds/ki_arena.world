@@ -1,0 +1,344 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-19.2 -6.4 10.9 0 0.25 0.22</pose>
+      </camera>
+    </gui>
+
+    <scene>
+	  <sky>
+		<clouds>
+		  <speed>4</speed>
+		</clouds>
+	  </sky>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ki_plane</uri>
+      <name>mbzirc_plane</name>
+	  <pose> 62.0 60.0 -0.1 0 0 0 </pose>
+    </include>
+
+    <!-- KI building -->
+    <include>
+      <uri>model://ki_building</uri>
+      <name>ki_building_1</name>
+	  <pose> -105.0 173.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_2</name>
+	  <pose> 12.0 120.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_3</name>
+	  <pose> 88.0 175.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_4</name>
+	  <pose> 49.0 148.0 -0.0 0 0 -1.57079 </pose>
+    </include>
+
+   <!-- KI building -->
+    
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_7</name>
+	  <pose> 89.3 -23.1 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_8</name>
+	  <pose> 153.4 -16.7 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_9</name>
+	  <pose> 149.0 0.3 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_10</name>
+	  <pose> 150.0 17.9 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_11</name>
+	  <pose> 108.0 -16.6 -0.0 0 0 0 </pose>
+    </include>
+
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_13</name>
+	  <pose> -27.0 -20.9 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_14</name>
+	  <pose> 124.2 100.0 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_15</name>
+	  <pose> 124.0 112.0 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_16</name>
+	  <pose> 152.3 136.8 -0.0 0 0 0 </pose>
+    </include>
+
+
+
+
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_1</name>
+	  <pose> -32.0 -5.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_2</name>
+	  <pose> -32.0 5.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_3</name>
+	  <pose> -32.0 15.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>pine_tree_4</name>
+	  <pose> -32.0 25.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_5</name>
+	  <pose> -32.0 35.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_6</name>
+	  <pose> -32.0 45.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_7</name>
+	  <pose> -32.0 55.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_8</name>
+	  <pose> -32.0 65.0 -0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://pine_tree</uri>
+      <name>pine_tree_9</name>
+	  <pose> -32.0 75.0 -0.0 0 0 0 </pose>
+    </include>
+
+
+
+
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_1</name>
+	  <pose> -37.5 100.0 -0.15 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_2</name>
+	  <pose> -37.5 50.0 -0.15 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_3</name>
+	  <pose> -37.5 0.0 -0.15 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_4</name>
+	  <pose> -14.5 -27.0 -0.15 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_5</name>
+	  <pose> 35.5 -27.0 -0.15 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_6</name>
+	  <pose> 85.5 -27.0 -0.15 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_7</name>
+	  <pose> -64.5 -27.0 -0.15 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_8</name>
+	  <pose> 134.5 -27.0 -0.15 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_9</name>
+	  <pose> 162.0 -5.0 -0.15 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_10</name>
+	  <pose> 162.0 45.0 -0.15 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sidewalk</uri>
+      <name>sidewalk_11</name>
+	  <pose> 162.0 95.0 -0.15 0 0 0 </pose>
+    </include>
+
+
+
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_1</name>
+	  <pose> 89.0 -37.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_2</name>
+	  <pose> 89.0 -52.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_3</name>
+	  <pose> -11.0 -37.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_4</name>
+	  <pose> -11.0 -52.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://lane_cross</uri>
+      <name>lane_cross</name>
+	  <pose> 171.5 -44.5 -0.45 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_5</name>
+	  <pose> 171.5 45.0 -0.45 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://lane</uri>
+      <name>lane_6</name>
+	  <pose> 171.5 -134.0 -0.45 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://lane_50</uri>
+      <name>lane_50_1</name>
+	  <pose> 204.0 -37.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+    <include>
+      <uri>model://lane_50</uri>
+      <name>lane_50_2</name>
+	  <pose> 204.0 -52.0 -0.45 0 0 -1.57079 </pose>
+    </include>
+
+
+    <include>
+      <uri>model://parking_lot</uri>
+      <name>parking_lot</name>
+	  <pose> 144.0 91.0 0.0 0 0 0 </pose>
+    </include>
+
+
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_1</name>
+	  <pose> 125.0 57.5 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_2</name>
+	  <pose> 125.6 64.1 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_3</name>
+	  <pose> 125.5 74.5 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_4</name>
+	  <pose> 124.6 86.5 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_5</name>
+	  <pose> 147.6 8.8 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_6</name>
+	  <pose> 143.5 -19.5 0.0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://KI_tree</uri>
+      <name>KI_tree_7</name>
+	  <pose> 95.1 -14.5 0.0 0 0 0 </pose>
+    </include>
+
+
+
+
+    <physics name='default_physics' default='0' type='ode'>
+      <gravity>0 0 -9.8066</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <magnetic_field>6.0e-6 2.3e-5 -4.2e-5</magnetic_field>
+    </physics>
+  </world>
+</sdf>

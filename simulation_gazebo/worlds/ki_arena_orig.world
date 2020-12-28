@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-19.2 -6.4 10.9 0 0.25 0.22</pose>
+      </camera>
+    </gui>
+
+    <scene>
+	  <sky>
+		<clouds>
+		  <speed>8</speed>
+		</clouds>
+	  </sky>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ki_plane</uri>
+      <name>mbzirc_plane</name>
+	  <pose> 30.0 50.0 -0.1 0 0 0 </pose>
+    </include>
+
+    <!-- KI building -->
+    <include>
+      <uri>model://ki_building</uri>
+      <name>ki_building_1</name>
+	  <pose> -100.0 160.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_2</name>
+	  <pose> 12.0 120.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_3</name>
+	  <pose> 42.0 220.0 -0.0 0 0 0 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://ki_building_2</uri>
+      <name>ki_building_4</name>
+	  <pose> 77.0 155.0 -0.0 0 0 -1.57079 </pose>
+    </include>
+
+   <!-- KI building -->
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_1</name>
+	  <pose> 3.9 -19.0 -0.0 0 0 0 </pose>
+    </include>
+
+    <!--include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_2</name>
+	  <pose> 21.0 -20.1 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_3</name>
+	  <pose> 36.0 -20.5 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_4</name>
+	  <pose> 49.8 -15.6 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_5</name>
+	  <pose> 61.0 -23.4 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_6</name>
+	  <pose> 74.0 -19.9 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_7</name>
+	  <pose> 89.3 -23.1 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_8</name>
+	  <pose> 99.4 -2.7 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_9</name>
+	  <pose> 99.4 16.3 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_10</name>
+	  <pose> 100.0 30.9 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_11</name>
+	  <pose> 99.3 47.6 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_12</name>
+	  <pose> -16.0 -14.1 -0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC_tree</uri>
+      <name>AIGC_tree_13</name>
+	  <pose> -27.0 -20.9 -0.0 0 0 0 </pose>
+    </include-->
+
+    <physics name='default_physics' default='0' type='ode'>
+      <gravity>0 0 -9.8066</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <magnetic_field>6.0e-6 2.3e-5 -4.2e-5</magnetic_field>
+    </physics>
+  </world>
+</sdf>
