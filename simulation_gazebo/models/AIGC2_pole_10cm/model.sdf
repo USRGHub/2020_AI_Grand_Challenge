@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_pole_10cm">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 1.2 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+            <cylinder>
+              <radius>.057</radius>
+              <length>2.4</length>
+            </cylinder>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+            <cylinder>
+              <radius>.057</radius>
+              <length>2.4</length>
+            </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

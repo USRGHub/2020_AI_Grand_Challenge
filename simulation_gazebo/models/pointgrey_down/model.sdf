@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="camera_down">
+    <pose>0 0 0.0 0 0 0</pose>
+    <link name='link'>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>4.15e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>2.407e-06</iyy>
+          <iyz>0</iyz>
+          <izz>2.407e-06</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+      <sensor name='camera' type='wideanglecamera'>
+        <update_rate>30</update_rate>
+        <camera name='__default__'>
+          <horizontal_fov>1.5</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+          </image>
+          <clip>
+            <near>0.01</near>
+            <far>100</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.0001</stddev>
+          </noise>
+          <lens>
+			<env_texture_size>512</env_texture_size>
+		  </lens>
+        </camera>
+        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+		  <robotNamespace>scout</robotNamespace>
+		  <cameraName>downward</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_down::link</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+      <collision name="collision">
+        <pose>0 0 0.0 0 0.0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.024 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.02 0.024 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <pose>0 0 0.0 0 0.0 0</pose>
+        <cast_shadows>1</cast_shadows>
+        <transparency>0</transparency>
+      </visual>
+    </link>
+  </model>
+</sdf>

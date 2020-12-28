@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="AIGC2_tree">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 1.5707 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+		    <scale>4.5 6.0 4.5</scale>
+            <uri>model://AIGC2_tree/meshes/Tree4.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <!-- give it some transparency so the transparency in the PNGs is used -->
+        <transparency>0.001</transparency>
+        <geometry>
+          <mesh>
+		    <scale>4.5 6.0 4.5</scale>
+            <uri>model://AIGC2_tree/meshes/Tree4.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

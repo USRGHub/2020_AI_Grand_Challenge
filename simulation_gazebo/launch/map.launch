@@ -1,0 +1,7 @@
+<launch>
+  <arg name="world_name" default="$(find simulation_gazebo)/worlds/AIGC_2020.world"/>
+
+  <include file="$(find simulation_gazebo)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/>
+  </include>
+</launch>

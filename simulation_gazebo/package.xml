@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>simulation_gazebo</name>
+  <version>0.0.0</version>
+  <description>simulation workspace using GAZEBO</description>
+
+  <maintainer email="hslee89@kaist.ac.kr">Hanseob Lee</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,526 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-15.8 -3.2 24.8 0 0.7 0.4</pose>
+      </camera>
+    </gui>
+
+    <scene>
+      <grid>false</grid>
+      <origin_visual>false</origin_visual>
+    </scene>
+
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_ground</uri>
+	  <pose> 18.0 10.5 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_start</uri>
+	  <pose> 2.0 16.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_landing</uri>
+	  <pose> 2.0 5.0 0.0 0 0 0 </pose>
+    </include>
+
+
+	<!-- ==================================== -->
+    <!--  WALL                                -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_wall_36m</uri>
+      <name>AIGC2_wall_36m_1</name>
+	  <pose> 18.0 0.0 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_wall_36m</uri>
+      <name>AIGC2_wall_36m_2</name>
+	  <pose> 18.0 21.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_36m</uri>
+      <name>AIGC2_wall_36m_3</name>
+	  <pose> 18.0 22.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_1</name>
+	  <pose> 0.0 10.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_2</name>
+	  <pose> 0.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_3</name>
+	  <pose> 6.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_4</name>
+	  <pose> 12.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_5</name>
+	  <pose> 18.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_6</name>
+	  <pose> 24.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_7</name>
+	  <pose> 30.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_8</name>
+	  <pose> 36.0 21.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_9</name>
+	  <pose> 31.0 10.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_10</name>
+	  <pose> 34.0 10.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+
+    <include>
+      <uri>model://AIGC2_wall_31m</uri>
+      <name>AIGC2_wall_31m_1</name>
+	  <pose> 15.5 10.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_31m</uri>
+      <name>AIGC2_wall_31m_2</name>
+	  <pose> 15.5 11.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_21m</uri>
+      <name>AIGC2_wall_21m_1</name>
+	  <pose> 36.0 10.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_2m</uri>
+      <name>AIGC2_wall_2m_1</name>
+	  <pose> 35.0 10.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_2m</uri>
+      <name>AIGC2_wall_2m_2</name>
+	  <pose> 35.0 11.0 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_5m</uri>
+      <name>AIGC2_wall_5m_1</name>
+	  <pose> 0.0 10.5 0.0 0 0 1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_5m</uri>
+      <name>AIGC2_wall_5m_2</name>
+	  <pose> -1.0 10.5 0.0 0 0 1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_12</name>
+	  <pose> -0.5 12.5 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m_11</name>
+	  <pose> -0.5 8.5 0.0 0 0 0 </pose>
+    </include>
+
+	<!-- ==================================== -->
+    <!--  2. Wall Obstacle                    -->
+	<!-- ==================================== -->
+
+
+    <include>
+      <uri>model://AIGC2_wall_4m</uri>
+      <name>AIGC2_wall_4m_1</name>
+	  <pose> 7.25 16.0 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_3m</uri>
+      <name>AIGC2_wall_3m_1</name>
+	  <pose> 10.75 19.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wall_3m</uri>
+      <name>AIGC2_wall_3m_2</name>
+	  <pose> 10.75 12.5 0.0 0 0 -1.57079 </pose>
+    </include>
+
+
+
+	<!-- ==================================== -->
+    <!--  3. POLE OBSTACLE                    -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_pole_30cm</uri>
+      <name>AIGC2_pole_30cm_1</name>
+	  <pose> 16.5 16.37 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_pole_30cm</uri>
+      <name>AIGC2_pole_30cm_2</name>
+	  <pose> 12.96 15.5 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_pole_20cm</uri>
+      <name>AIGC2_pole_20cm_1</name>
+	  <pose> 16.0 18.3 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_pole_20cm</uri>
+      <name>AIGC2_pole_20cm_2</name>
+	  <pose> 14.35 17.0 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_pole_20cm</uri>
+      <name>AIGC2_pole_20cm_3</name>
+	  <pose> 14.94 14.84 0.0 0 0 0 </pose>
+    </include>	
+
+    <include>
+      <uri>model://AIGC2_pole_20cm</uri>
+      <name>AIGC2_pole_20cm_4</name>
+	  <pose> 15.7 12.69 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_20cm</uri>
+      <name>AIGC2_pole_20cm_5</name>
+	  <pose> 12.89 12.39 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_10cm</uri>
+      <name>AIGC2_pole_10cm_1</name>
+	  <pose> 11.93 17.37 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_10cm</uri>
+      <name>AIGC2_pole_10cm_2</name>
+	  <pose> 12.83 18.8 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_10cm</uri>
+      <name>AIGC2_pole_10cm_3</name>
+	  <pose> 16.15 13.96 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_10cm</uri>
+      <name>AIGC2_pole_10cm_4</name>
+	  <pose> 14.44 18.05 0.0 0 0 0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_pole_10cm</uri>
+      <name>AIGC2_pole_10cm_5</name>
+	  <pose> 14.14 19.84 0.0 0 0 0 </pose>
+    </include>
+
+
+
+
+	<!-- ==================================== -->
+    <!--  4. NET OBSTACLE                     -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_net</uri>
+      <name>AIGCS_net_1</name>
+	  <pose> 23.0 16.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_net</uri>
+      <name>AIGCS_net_2</name>
+	  <pose> 21.0 16.0 1.5 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_net</uri>
+      <name>AIGCS_net_3</name>
+	  <pose> 19.0 16.0 0.0 0 0 0.0 </pose>
+    </include>
+
+
+
+	<!-- ==================================== -->
+    <!--  5. TREE OBSTACLE                    -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_grass</uri>
+      <name>AIGCS_grass</name>
+	  <pose> 27.0 16.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_5</uri>
+      <name>AIGCS_tree_5_1</name>
+	  <pose> 24.37 16.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_5</uri>
+      <name>AIGCS_tree_5_2</name>
+	  <pose> 24.4 12.4 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_4</uri>
+      <name>AIGCS_tree_4_1</name>
+	  <pose> 29.0 18.9 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_4</uri>
+      <name>AIGCS_tree_4_2</name>
+	  <pose> 26.88 12.6 0.0 0 0 0.0 </pose>
+    </include>
+
+
+
+    <include>
+      <uri>model://AIGC2_tree_3</uri>
+      <name>AIGCS_tree_1</name>
+	  <pose> 24.24 19.6 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_3</uri>
+      <name>AIGCS_tree_2</name>
+	  <pose> 26.55 19.13 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_3</uri>
+      <name>AIGCS_tree_3</name>
+	  <pose> 26.78 16.44 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_3</uri>
+      <name>AIGCS_tree_4</name>
+	  <pose> 28.96 15.66 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_tree_3</uri>
+      <name>AIGCS_tree_5</name>
+	  <pose> 29.11 12.69 0.0 0 0 0.0 </pose>
+    </include>
+
+    <!--include>
+      <uri>model://AIGC2_basket</uri>
+      <name>AIGCS_basket_1</name>
+	  <pose> 24.42 17.59 -0.17 0 0 1.633121 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_basket</uri>
+      <name>AIGCS_basket_2</name>
+	  <pose> 24.52 18.01 0.077 0.000423 0.62499 1.633121 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_basket</uri>
+      <name>AIGCS_basket_3</name>
+	  <pose> 24.53 13.57 -0.17 0.000 0.0001 2.5148 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_basket</uri>
+      <name>AIGCS_basket_4</name>
+	  <pose> 27.774 14.648 -0.17 0.000 0.0001 -2.1158 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_basket</uri>
+      <name>AIGCS_basket_5</name>
+	  <pose> 27.82 17.6355 -0.17 0.000 0.0001 1.634 </pose>
+    </include-->
+
+
+	<!-- ==================================== -->
+    <!--  6. CORRIDOR OBSTACLE                -->
+	<!-- ==================================== -->
+
+    <!--include>
+      <uri>model://AIGC2_corridor</uri>
+      <name>AIGC2_corridor</name>
+	  <pose> 33.9 3.7 0.15 0 0 0.0 </pose>
+    </include-->
+
+    <include>
+      <uri>model://AIGC2_tunnel_2</uri>
+      <name>AIGC2_tunnel</name>
+	  <pose> 33.97 12.3 0.1 0 0 3.141592 </pose>
+    </include>
+
+
+
+	<!-- ==================================== -->
+    <!--  7. WINDOW OBSTACLE                  -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_window</uri>
+      <name>AIGC2_window</name>
+	  <pose> 21.0 5.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_window_glass</uri>
+      <name>AIGC2_glass_1</name>
+	  <pose> 21.0 2.2 0.8 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_window_glass_half</uri>
+      <name>AIGC2_glass_2</name>
+	  <pose> 21.0 5.0 0.8 0 0 0.0 </pose>
+    </include>
+
+
+
+
+	<!-- ==================================== -->
+    <!--  8. BLUE BOX                         -->
+	<!-- ==================================== -->
+
+    <include>
+      <uri>model://AIGC2_wind_10m</uri>
+      <name>AIGC2_wind_10m_1</name>
+	  <pose> 12.0 9.925 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wind_10m</uri>
+      <name>AIGC2_wind_10m_2</name>
+	  <pose> 12.0 0.075 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wind_9m</uri>
+      <name>AIGC2_wind_9m_1</name>
+	  <pose> 18.0 5.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_wind_9m</uri>
+      <name>AIGC2_wind_9m_2</name>
+	  <pose> 6.0 5.0 0.0 0 0 0.0 </pose>
+    </include>
+
+    <include>
+      <uri>model://AIGC2_box</uri>
+      <name>AIGC2_box</name>
+	  <pose> 12.0 5.0 0.0 0 0 0.0 </pose>
+    </include>
+
+
+
+	<!-- ==================================== -->
+    <!--  9. ETC                              -->
+	<!-- ==================================== -->
+
+    <!--include>
+      <uri>model://AIGC2_wall_1m</uri>
+      <name>AIGC2_wall_1m</name>
+	  <pose> 14.3 4.9 0.0 0 0 0.0 </pose>
+    </include>
+
+
+    <include>
+      <uri>model://AIGC2_wall_10m</uri>
+      <name>AIGC2_wall_10m_etc</name>
+	  <pose> -2.64 4.9 0.0 0 0 -1.57079 </pose>
+    </include-->
+
+
+    <physics name='default_physics' default='0' type='ode'>
+      <gravity>0 0 -9.8066</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <magnetic_field>6.0e-6 2.3e-5 -4.2e-5</magnetic_field>
+    </physics>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-21.5641 -5.24295 22.3626 0 0.563642 -0.035802</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+  </world>
+</sdf>

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_net">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0.75 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 9.0 1.3</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.01 9.0 1.4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_net/materials/scripts</uri>
+            <uri>model://AIGC2_net/materials/textures</uri>
+            <name>vrc/tennis_net</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

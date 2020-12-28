@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="robot_namespace" default="scout"/>
+
+  <group ns="$(arg robot_namespace)">
+	<node name="tf_listener" pkg="tf_listener" type="tf_listener" output="screen">
+		<param name="robot_namespace" value="$(arg robot_namespace)" />
+	</node>
+  </group>
+
+</launch>

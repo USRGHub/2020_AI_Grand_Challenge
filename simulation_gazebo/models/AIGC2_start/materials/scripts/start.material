@@ -1,0 +1,17 @@
+material vrc/start
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture start_new.png
+				filtering anistropic
+				max_anisotropy 1
+				scale 1 1
+			}
+		}
+	}
+}
