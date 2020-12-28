@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Someone</author>
+      <authoring_tool>Assimp Collada Exporter</authoring_tool>
+    </contributor>
+    <created>2000-01-01T23:59:59</created>
+    <modified>2000-01-01T23:59:59</modified>
+    <unit name="centimeter" meter="0.01" />
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_geometries>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="myScene" name="myScene">
+      <node id="<BlenderRoot>" name="<BlenderRoot>">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="Tree.Birch" name="Tree.Birch">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#myScene" />
+  </scene>
+</COLLADA>

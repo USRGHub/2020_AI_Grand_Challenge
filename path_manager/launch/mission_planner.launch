@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="robot_namespace" default="uav1"/>
+
+  <group ns="$(arg robot_namespace)">
+	<node name="mission_white" pkg="tracking_mission" type="mission_white.py" output="screen">
+		
+	</node>
+  </group>
+
+</launch>

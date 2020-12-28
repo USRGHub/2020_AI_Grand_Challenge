@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+<arg name="robot_namespace" default="scout" />
+	<node name="local_map" type="local_map" pkg="local_map"	output="screen" clear_params="true" ns="$(arg robot_namespace)">
+	</node>
+</launch>

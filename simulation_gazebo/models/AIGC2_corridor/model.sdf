@@ -1,0 +1,207 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_corridor">
+    <static>true</static>
+    <link name="link">
+      <pose>-1.4 4.4 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.8 8.8 0.15</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>2.8 8.8 0.15</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link1">
+      <pose>-4.3 1.4 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>3.0 2.8 0.15</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>3.0 2.8 0.15</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <!--link name="link2">
+      <pose>-1.0 4 2 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 8.0 0.4</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>2.0 8.0 0.4</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/Black</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link3">
+      <pose>-5.0 1 2 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>6.0 2.0 0.4</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>6.0 2.0 0.4</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/Black</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link-->
+
+    <link name="link4">
+      <pose>0.0 4.4 1.4 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.2 8.8 2.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.2 8.8 2.8</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link5">
+      <pose>-2.8 5.8 1.4 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.2 6.0 2.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.2 6.0 2.8</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link6">
+      <pose>-4.3 2.8 1.4 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>3.0 0.2 2.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>3.0 0.2 2.8</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link7">
+      <pose>-2.9 0 1.4 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>5.8 0.2 2.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>5.8 0.2 2.8</size>
+          </box>
+        </geometry>
+        <material>
+			<script>
+				<name>Gazebo/DarkGrey</name>
+				<uri>file://media/materials/scripts/gazebo.material</uri>
+			</script>
+        </material>
+      </visual>
+    </link>
+
+
+  </model>
+</sdf>

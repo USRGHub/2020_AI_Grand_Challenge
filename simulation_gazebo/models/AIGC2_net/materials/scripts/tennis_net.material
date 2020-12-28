@@ -1,0 +1,17 @@
+material vrc/tennis_net
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tennis_net.jpg
+				filtering anistropic
+				max_anisotropy 1
+				scale 1 1
+			}
+		}
+	}
+}

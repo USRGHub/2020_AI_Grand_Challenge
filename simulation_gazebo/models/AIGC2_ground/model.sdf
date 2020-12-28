@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_ground">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>36 21 .04</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>36 21 .04</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_ground/materials/scripts</uri>
+            <uri>model://AIGC2_ground/materials/textures</uri>
+            <name>vrc/asphalt</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

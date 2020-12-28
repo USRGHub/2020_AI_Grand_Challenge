@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="robot_namespace" default="target"/>
+
+  <group ns="$(arg robot_namespace)">
+	<node name="mission_target" pkg="tracking_mission" type="mission_target.py" output="screen">
+		
+	</node>
+  </group>
+
+</launch>

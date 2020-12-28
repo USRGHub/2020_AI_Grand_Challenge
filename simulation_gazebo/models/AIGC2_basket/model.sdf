@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_basket">
+	<link name='chassis1'>
+        <pose>0.0 0 0.6 3.141592 0 0</pose>
+      <inertial>
+        <mass>10.3</mass>
+        <inertia>
+          <ixx>100.0347563</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>100.0458929</iyy>
+          <iyz>0</iyz>
+          <izz>100.0977</izz>
+        </inertia>
+      </inertial>
+		<collision name='collision1'>
+			<geometry>
+				<mesh>
+				<scale>0.01 0.01 0.01</scale>
+				<uri>model://AIGC2_basket/aigc_basket.stl</uri></mesh>
+			</geometry>
+		</collision>
+
+		<visual name='visual1'>
+			<geometry>
+				<mesh>
+				<scale>0.01 0.01 0.01</scale>
+				<uri>model://AIGC2_basket/aigc_basket.stl</uri></mesh>
+			</geometry>
+		    <material>
+		      <script>
+		        <name>Gazebo/Yellow</name>
+		        <uri>file://media/materials/scripts/gazebo.material</uri>
+		      </script>
+		    </material>
+		</visual>
+	</link>
+  </model>
+</sdf>

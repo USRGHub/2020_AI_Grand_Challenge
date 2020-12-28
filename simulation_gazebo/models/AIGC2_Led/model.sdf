@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_Led">
+    <link name="led_link">
+          <inertial>
+            <pose frame=''>0 0 0 0 -0 0</pose>
+            <mass>0.000001</mass>
+            <inertia>
+              <ixx>0.001</ixx>
+              <ixy>0.0</ixy><iyy>0.001</iyy>
+              <ixz>0.0</ixz><iyz>0.0</iyz><izz>0.001</izz>
+            </inertia>
+          </inertial>
+		  <light name='light_source_led' type='spot'>
+		    <range>2</range>
+		    <pose>0 0 0 0 0 0</pose>
+		    <attenuation>
+		      <linear>0</linear>
+		      <constant>0.05</constant>
+		      <quadratic>0.02</quadratic>
+		    </attenuation>
+		    <diffuse>1 1 1 1</diffuse>
+		    <specular>0.2 0.2 0.2 1</specular>
+		    <spot>
+		      <inner_angle>1.0</inner_angle>
+		      <outer_angle>1.8</outer_angle>
+		      <falloff>1</falloff>
+		    </spot>
+		    <direction>0 0 -1</direction>
+		  </light>
+
+
+          <collision name="light_source">
+            <geometry>
+              <mesh>
+                <uri>model://Led/meshes/headlight_lamp.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+
+          <visual name="light_source">
+            <geometry>
+              <mesh>
+                <uri>model://Led/meshes/headlight_lamp.dae</uri>
+              </mesh>
+            </geometry>
+            <transparency>1</transparency>
+            <material>
+              <ambient>1 1 1 1</ambient>
+              <diffuse>1 1 1 1</diffuse>
+              <specular>1 1 1 1</specular>
+              <emissive>0 0 0 1</emissive>
+            </material>
+            <!--plugin name='light_source_visualize' filename='libLightVisualPlugin.so'>
+              <light>
+                <id>light_source</id>
+                <visualize>true</visualize>
+              </light>
+            </plugin-->
+          </visual>
+        <!--plugin name='light_control' filename='libRosFlashLightPlugin.so'>
+          <service_name>enable</service_name>
+          <light>
+            <id>body/light_source</id>
+            <xacro:insert_block name="plugin_params"/>
+            <enable>true</enable>
+          </light>
+        </plugin-->
+    </link>
+  </model>
+</sdf>

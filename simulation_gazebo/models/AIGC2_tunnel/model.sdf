@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_tunnel">
+    <static>true</static>
+	<link name='chassis1'>
+		<collision name='collision1'>
+			<geometry>
+				<mesh>
+				<scale>0.01 0.01 0.01</scale>
+				<uri>model://AIGC2_tunnel/AIGC_TUNNEL.stl</uri></mesh>
+			</geometry>
+		</collision>
+
+		<visual name='visual1'>
+			<geometry>
+				<mesh>
+				<scale>0.01 0.01 0.01</scale>
+				<uri>model://AIGC2_tunnel/AIGC_TUNNEL.stl</uri></mesh>
+			</geometry>
+		    <material>
+		      <script>
+		        <name>Gazebo/DarkGrey</name>
+		        <uri>file://media/materials/scripts/gazebo.material</uri>
+		      </script>
+		    </material>
+		</visual>
+	</link>
+  </model>
+</sdf>

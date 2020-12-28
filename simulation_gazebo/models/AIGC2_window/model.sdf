@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="AIGC2_window">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0.4 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 10.0 0.8</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 10.0 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link1">
+      <pose>0 0 2.9 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 10.0 0.2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 10.0 0.2</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link2">
+      <pose>0 1.4 1.8 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 1.0 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 1.0 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link3">
+      <pose>0 -1.4 1.8 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 1.0 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 1.0 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="link4">
+      <pose>0 4.35 1.8 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 1.3 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 1.3 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+
+    <link name="link5">
+      <pose>0 -4.35 1.8 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.5 1.3 2.0</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.5 1.3 2.0</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://AIGC2_window/materials/scripts</uri>
+            <uri>model://AIGC2_window/materials/textures</uri>
+            <name>vrc/grey_wall</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+  </model>
+</sdf>
