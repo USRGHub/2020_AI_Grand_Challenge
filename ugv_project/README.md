@@ -2,29 +2,51 @@
 
 Make the UGV model using URDF
 
-# Dependencies
+# Create Package
 
-Currently in jade and kinetic it is necessary to
+We need three main packages, ugv_control, ugv_description, ugv_gazebo
 
-    git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git
+    cd ~/catkin_ws/src/
+    catkin_create_pkg ugv_control
+    catkin_create_pkg ugv_description
+    catkin_create_pkg ugv_gazebo
 
 because it is not available as a deb.
 
-If using kinetic, get the kinetic branch:
+# Creating UGV World
 
-     cd gazebo_ros_pkgs
-     git checkout remotes/origin/kinetic-devel
+First of all, create the some subfolders in the gazebo package
 
-# gazebo simulation
+    roscd ugv_gazebo
+    mkdir launch worlds
 
-    roslaunch carbot_gazebo_control carbot_gazebo_control.launch
+Then, create the a new world file in the worlds folder
 
-If it is the first time gazebo has launched, this may take a long time before you see
+    cd worlds
+    gedit ugv.world
+    
+write the basic code as follow
 
-    [Spawn status: SpawnModel: Successfully spawned model]
+    <?xml version="1.0"?>
+    <sdf version="1.5">
+    <world name="ugv">
+    </world>
+    </sdf>
+    
+Here you could directly add models and object with their position. Also the laws of physics may be defined in a world. This is an important step to understand, because in this file you could also attach a specific plugin to an object. The plugin itself contains ROS and Gazebo specific code for more complex behaviors.
 
-and the model appears in rviz and gazebo.
+At first we just want to add some basic objects, like a ground and a basic illumination source inside the world tag.
 
-Gazebo frequently doesn't exit cleanly after pressing ctrl-c, you may have to kill the roscore and restart it to run again.
+    <include>
+        <uri>model://sun</uri>
+    </include>
 
-If it does exit cleanly it is a good idea to:
+    <include>
+        <uri>model://ground_plane</uri>
+    </include>
+    
+Change to the launch directory of your project:
+
+
+
+end.
