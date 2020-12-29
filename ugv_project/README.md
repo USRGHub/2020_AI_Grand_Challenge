@@ -70,11 +70,11 @@ Now you should see the gazebo server and the gui starting with a world that cont
 
 # Create the Robot Model (URDF)
 
-In ~/mybot_ws/src/mybot_description/urdf, there will be four files:
+In ~/catkin_ws/src/ugv_description/urdf, there will be four files:
 
-mybot.xacro: primary file that loads the other three files and contains only URDF items like joints and links
+ugv.xacro: primary file that loads the other three files and contains only URDF items like joints and links
 
-mybot.gazebo: contains gazebo-specific labels that are wrapped within gaz
+ugv.gazebo: contains gazebo-specific labels that are wrapped within gaz
 
 materials.xacro: maps strings to colors
 
@@ -110,9 +110,9 @@ Let’s define some physical properties for our robot, mainly the dimensions of 
 
 We will also include three files :
 
-    <xacro:include filename="$(find mybot_description)/urdf/ugv.gazebo" />
-    <xacro:include filename="$(find mybot_description)/urdf/materials.xacro" />
-    <xacro:include filename="$(find mybot_description)/urdf/macros.xacro" />
+    <xacro:include filename="$(find ugv_description)/urdf/ugv.gazebo" />
+    <xacro:include filename="$(find ugv_description)/urdf/materials.xacro" />
+    <xacro:include filename="$(find ugv_description)/urdf/macros.xacro" />
 
 Every file has to contain the robot tag and everything we put in them should be in this tag.
 
@@ -209,7 +209,7 @@ The physic engine does not accept a base_link with inertia. It is then useful to
       <child link="chassis"/>
     </joint>
 
-In order to start gazebo with our model, we have to modify the previously created launch file mybot_world.launch by adding the following two tags in the launch tag:
+In order to start gazebo with our model, we have to modify the previously created launch file ugv_world.launch by adding the following two tags in the launch tag:
 
 
     <!-- urdf xml robot description loaded on the Parameter Server, converting the xacro into a proper urdf file-->
