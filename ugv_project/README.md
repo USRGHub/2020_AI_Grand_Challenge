@@ -86,7 +86,7 @@ The Universal Robotic Description Format (URDF) is an XML file format used in RO
 
 Ok so first we need to go into our description package and create the urdf subfolder and the description file:
 
-    roscd mybot_description
+    roscd ugv_description
     mkdir urdf
     cd urdf
     gedit ugv.xacro
