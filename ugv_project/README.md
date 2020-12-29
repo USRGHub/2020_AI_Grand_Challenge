@@ -222,5 +222,3 @@ In order to start gazebo with our model, we have to modify the previously create
 
 The first tag will first call the xacro script to convert of xacro description into an actual URDF. This URDF is then inserted into a ROS parameter called “robot_description” (this is a standard name used by many ROS tools).
 
-
-end.
