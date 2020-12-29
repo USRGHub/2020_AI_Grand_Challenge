@@ -47,24 +47,24 @@ At first we just want to add some basic objects, like a ground and a basic illum
     
 Change to the launch directory of your project:
     
-    roscd mybot_gazebo/launch
+    roscd ugv_gazebo/launch
     
 Create a new file:
 
-    gedit mybot_world.launch
+    gedit ugv_world.launch
 
 and insert:
 
     <launch>      
         <include file="$(find gazebo_ros)/launch/empty_world.launch">        
-            <arg name="world_name" value="$(find mybot_gazebo)/worlds/mybot.world"/>        
+            <arg name="world_name" value="$(find ugv_gazebo)/worlds/ugv.world"/>        
             <arg name="gui" value="true"/>      
         </include>    
     </launch>
     
 This launch file will just execute a default launch file provided by Gazebo, and tell it to load our world file and show the Gazebo client. You can launch it by doing:
 
-    roslaunch mybot_gazebo mybot_world.launch
+    roslaunch ugv_gazebo ugv_world.launch
 
 Now you should see the gazebo server and the gui starting with a world that contains a ground plane and a sun (which is not obviously visible without objects). If not, it can be that there are some connections problems with the server.
 
