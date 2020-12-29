@@ -70,5 +70,13 @@ Now you should see the gazebo server and the gui starting with a world that cont
 
 # Create the Robot Model (URDF)
 
+In ~/mybot_ws/src/mybot_description/urdf, there will be four files:
+
+mybot.xacro: primary file that loads the other three files and contains only URDF items like joints and links
+mybot.gazebo: contains gazebo-specific labels that are wrapped within gaz
+materials.xacro: maps strings to colors
+macros.xacro: macros to help simplify
+
+The more accurate you want to model your robot the more time you need to spend on the design. In the next image you see a developing process of a robot model, from a simple cube to a differential drive robot. You can also check the ROS tutorial about the robot.
 
 end.
