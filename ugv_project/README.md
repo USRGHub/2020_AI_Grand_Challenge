@@ -4,8 +4,12 @@ Make the UGV model using URDF
 
 # Execute Package
 
-We need three main packages, ugv_control, ugv_description, ugv_gazebo
+You can execute the GAZEBO simulation world (You might need a time to download the default model in GAZEBO Server)
 
-    roslaunch steerbot steerbot.launch 
+    roslaunch steerbot world.launch 
 
-because it is not available as a deb.
+Then, run the code as follow
+
+    rosrun tele_operation teleop_twist_keyboard.py
+    
+
