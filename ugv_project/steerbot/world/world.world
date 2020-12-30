@@ -4,9 +4,13 @@
     <world name="default">
 
         <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <!--include>
             <uri>model://sonoma_raceway</uri>
 	        <pose> -306.14 -62.31 -7.5 0 0 0.656 </pose>
-        </include>
+        </include-->
 
         <include>
             <uri>model://sun</uri>
