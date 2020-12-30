@@ -5,7 +5,7 @@
 
 <!-- Mechanical Dimensions -->
 <xacro:property name="chassis_wid" 
-    value="0.20" />
+    value="0.2" />
 <xacro:property name="chassis_len"
     value="0.40" />
 <xacro:property name="chassis_hgt"
@@ -27,9 +27,9 @@
 <xacro:property name="max_steer_angle"
     value="0.5"  />
 <xacro:property name="bearing_friction"
-    value="0.001"/>
+    value="0.002"/>
 <xacro:property name="bearing_damping"
-    value="0.001"/>
+    value="0.002"/>
 
 
 

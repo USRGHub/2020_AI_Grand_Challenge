@@ -31,7 +31,7 @@
         <visual name="cover_visual">
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="$(find steerbot)/mesh/steerbot_1.dae" scale="0.0052 0.0052 0.0052"/>
+                <mesh filename="$(find steerbot)/mesh/steerbot_stl.dae" scale="0.0052 0.0052 0.0052"/>
             </geometry>
         </visual>
     </link>
@@ -378,6 +378,53 @@
         <axis xyz="0 0 1" rpy="0 0 0"/>
         <limit effort="1000" velocity="1000"/>
         <dynamics damping="${bearing_damping}" friction="${bearing_friction}"/>
+    </joint>
+
+
+    <link name="camera_link">
+        <inertial> 
+		        <mass value="0.01"/>
+		        <origin xyz="0 0 0" rpy="0 0 0"/>
+		        <inertia 
+		           ixx="4.15e-6" 
+		           iyy="2.407e-6" 
+		           izz="2.407e-6" 
+		           ixy="0.0" ixz="0.0" iyz="0.0" 
+		           />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size='0.02 0.1 0.04'/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="camera_link_joint" type="fixed">
+        <origin xyz='0.26 0 0.10' rpy="0 0 0"/>
+        <child link="camera_link"/>
+        <parent link="steerbot_chassis"/>
+    </joint>
+
+		<link name="scan_link">
+      <visual>
+        <geometry>
+          <mesh filename="$(find steerbot)/mesh/hokuyo.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </visual>
+      <inertial>
+        <mass value="0.000001" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.0001" ixy="0.0" ixz="0.0"
+          iyy="0.0001" iyz="0.0"
+          izz="0.0001" />
+      </inertial>
+    </link>
+
+    <joint name="scan_link_joint" type="fixed">
+        <origin xyz='0.0 0 0.15' rpy="0 0 0"/>
+        <child link="scan_link"/>
+        <parent link="steerbot_chassis"/>
     </joint>
 
 
