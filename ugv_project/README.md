@@ -6,7 +6,7 @@ Make the UGV model using URDF
 
 You can execute the GAZEBO simulation world (You might need a time to download the default model in GAZEBO Server)
 
-    roslaunch steerbot world.launch 
+    roslaunch steerbot test.launch 
 
 Then, run the code as follow
 
